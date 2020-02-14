@@ -1,0 +1,9 @@
+<h2><%= @cocktail.name %></h2>
+
+<ul class="list-group">
+  <p>Recipe :</p>
+  <% @cocktail.doses.each do |dose| %>
+    <li class="list-group-item"><%= dose.description %></li>
+  <% end %>
+</ul>
+
